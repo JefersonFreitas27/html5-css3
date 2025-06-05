@@ -13,6 +13,7 @@
             width: 600px;
             border: 1px solid black;
             border-collapse: collapse;
+            position: relative;
         }
         
         caption{
@@ -22,11 +23,23 @@
             background-color: black;
             color: white;
         }
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+            background-color: darkgray;
+        }
 
         thead,
         tfoot {
             background-color: darkgrey;
             color: black;
+        }
+
+        tbody>tr:nth-child(odd){
+            background-color: gray;
+        }
+        tbody>tr:nth-child(even){
+            background-color: cornflowerblue;
         }
 
         td,
